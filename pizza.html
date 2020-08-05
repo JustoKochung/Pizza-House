@@ -64,7 +64,7 @@
           <div class="row">
             <div class="col-md-6">
               <div class="welcome">
-                <img src="images/pizza2.jpeg" alt="">
+                <img src="images/pizza2.jpeg" class="img-fluid img-thumbnail shadow-lg" alt="">
               </div>
             </div>
             <div class="col-md-6">
@@ -78,46 +78,47 @@
           </div>
         </div>
       </section>
-      <div class="section-2 container-fluid p-0">
-        <div class="cover">
-          <div class="overlay"></div>
-          <div class="content text-center">
-            <h1>Choose from Our Unique List</h1>
-            <p>You can also customize your taste!</p>
-          </div>
-        </div>
-        <div class="container-fluid text-center">
-          <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
-            <div class="rect">
-              <h1>Pepperoni Flavor</h1>
-              <img src="images/peperroni.jpeg" alt="">
-              <p>Tasty Choice</p>
-              <div class="pricing">
-                <h1>1000/=</h1>
-                <a href="#" class="btn btn-dark px-5 py-2 mb-5">Select Option</a>
-              </div>
-            </div>
-            <div class="rect">
-              <h1>Custom Flavor</h1>
-              <img src="images/custom size.jpeg" alt="">
-              <p>Choose your ingredients</p>
-              <div class="pricing">
-                <h1>1200/=</h1>
-                <a href="#" class="btn btn-dark px-5 py-2 mb-5">Select Option</a>
-              </div>
-            </div>
-            <div class="rect">
-              <h1>Gluten-Free</h1>
-              <img src="images/gluten-free.png" alt="">
-              <p>Healthy Choice</p>
-              <div class="pricing">
-                <h1>800/=</h1>
-                <a href="#" class="btn btn-dark px-5 py-2 mb-5">Select Option</a>
-              </div>
-            </div>
-          </div>
+
+
+      <div class="container">
+        <div class="card">
+          <h1>Menu List</h1>
+          <p>Customize your choice of Pizza and Our Chefs will create it for you</p>
+          <p>We deliver it to your preferred location</p>
+          <form>
+            <h4>Address</h4>
+            <input type="radio" name="delivery" id="picking" checked> Picking
+            <br>
+            <input type="radio" name="delivery" id="delivery" onclick="insert(this.form)"> Delivery (5% added to total
+            Price)
+            <br>
+            <input type="text" name="location" id="location" readonly>
+            <br>
+            <!--Pizza Sizes-->
+            <input type="radio" name="size" id="small" checked> Small (800)
+            <br>
+            <input type="radio" name="size" id="medium"> Medium(1000)
+            <br>
+            <input type="radio" name="size" id="large"> Large(1200)
+            <br>
+            <!--Toppings-->
+            <form>
+              <h4>Toppings</h4>
+              <input type="checkbox" id="topping1"> Extra Cheese<br>
+              <input type="checkbox" id="topping1"> Sausage<br>
+              <input type="checkbox" id="topping1"> Honey Spiced<br>
+              <input type="checkbox" id="topping1"> Onions<br>
+              <input type="checkbox" id="topping1"> Pepperoni<br>
+            </form>
+            <h4>Order total</h4>
+            <form>
+              <input type="button" value="Calculate" onclick="total(this.form)">
+              <input type="button" id="reload" value="Reset">
+            </form>
+          </form>
         </div>
       </div>
+
       <section-3>
         <!--Client Feedbacks-->
         <div class="container text-center">
@@ -205,7 +206,8 @@
               </div>
               <div class="card-body">
                 <h3 class="card-title">Angel Markel</h3>
-                <p class="card-text">As we landed in Nairobi, we called our contact for a possible food joint and look,
+                <p class="card-text">As we landed in Nairobi, we called our contact for a possible food joint and
+                  look,
                   The managing Director turned up! We paid using Mastercard. Thank you Pizza House</p>
                 <a href="#">Nairobi</a>
                 <p class="text-black-50">Tourist</p>
