@@ -83,32 +83,41 @@
           <h1 id="menu">Menu List</h1>
           <form>
             <h4>Address</h4>
-            <input type="radio" name="delivery" id="picking" checked> Picking
+            <input type="radio" name="delivery" id="picking"> Picking
             <br>
             <input type="radio" name="delivery" id="delivery" onclick="insert(this.form)"> Delivery (5% added to total
             Price)
-            <br>
-            <input type="text" name="location" id="location" readonly>
-            <br>
-            <input type="radio" name="size" id="small" checked> Small (800)
-            <br>
-            <input type="radio" name="size" id="medium"> Medium(1000)
-            <br>
-            <input type="radio" name="size" id="large"> Large(1200)
-            <br>
-            <form>
-              <h4>Toppings</h4>
-              <input type="checkbox" id="topping1"> Extra Cheese<br>
-              <input type="checkbox" id="topping1"> Sausage<br>
-              <input type="checkbox" id="topping1"> Honey Spiced<br>
-              <input type="checkbox" id="topping1"> Onions<br>
-              <input type="checkbox" id="topping1"> Pepperoni<br>
-            </form>
-            <h4>Order total</h4>
-            <form>
-              <input type="button" value="Calculate" onclick="total(this.form)">
-              <input type="button" id="reload" value="Reset">
-            </form>
+            <input type="text" name="address" id="address" readonly>
+          </form>
+          <!--Pizza Sizes-->
+          <h4>Sizes</h4>
+          <input type="radio" name="size" id="small"> Small (800)
+          <br>
+          <input type="radio" name="size" id="medium"> Medium(1000)
+          <br>
+          <input type="radio" name="size" id="large"> Large(1200)
+          <br>
+          <form>
+            <!--Crust Choice-->
+            <h4>Crust (2% added to total Price) </h4>
+            <input type="radio" name="crust" id="silicon"> Silicon
+            <input type="radio" name="crust" id="crispy"> Crispy
+            <input type="radio" name="crust" id="stuffed"> Stuffed
+          </form>
+          <form>
+            <!--Toppings-->
+            <h4>Toppings (2% added to total Price)</h4>
+            <input type="checkbox" id="topping1"> Extra Cheese<br>
+            <input type="checkbox" id="topping1"> Sausage<br>
+            <input type="checkbox" id="topping1"> Honey Spiced<br>
+            <input type="checkbox" id="topping1"> Onions<br>
+            <input type="checkbox" id="topping1"> Pepperoni<br>
+          </form>
+          <h4>Order total</h4>
+          <form>
+            <input type="button" value="Calculate" onclick="total(this.form)">
+            <input type="button" id="reload" value="Reset">
+          </form>
           </form>
         </div>
       </div>
@@ -254,6 +263,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
   </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
