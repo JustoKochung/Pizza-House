@@ -6,7 +6,7 @@ Users are able to request an online order as well as make picking orders.
 
 ## Cloning
 ```bash
-$ git clone https://github.com/n-pretorious/week-four-prep-ip.git
+$ git clone https://github.com/JustoKochung/Pizza-House
 ```
 ## Technologies Used
 * HTML and CSS
@@ -24,7 +24,7 @@ $ git clone https://github.com/n-pretorious/week-four-prep-ip.git
 https://n-pretorious.github.io/week-four-prep-ip/
 
 ## Support and contact details
-Email: pretoriousndungu@gmail.com
+Email: kochungjusto26@gmail.com
 
 ### License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
