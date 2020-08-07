@@ -181,9 +181,26 @@ footer .column i {
   width: 50%;
   text-align: center;
   margin: 10px auto;
-  color: #484949;
+  font-size: 0.9em;
+  padding: 0.4em 0;
 }
 
 .menu-l {
-  background-color: purple;
+  background-image: url("https://images.pexels.com/photos/326347/pexels-photo-326347.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+}
+
+#menu {
+  font-weight: bold;
+  font-size: 2em;
+  font-style: var(--Sniglet-font);
+}
+
+#form {
+  text-align: left;
+  margin-left: 2px;
+}
+
+h5 {
+  font-style: italic;
+  font-weight: bold;
 }

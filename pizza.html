@@ -81,7 +81,8 @@
         <div class="jumbotron">
           <div class="card">
             <h1 id="menu">Menu List</h1>
-            <form>
+            <h5>Address</h5>
+            <form id="form">
               <input type="radio" name="delivery" id="picking">Take Away
               <br>
               <input type="radio" name="delivery" id="delivery" onclick="insert(this.form)">Delivery (Extra charge of
@@ -91,22 +92,25 @@
               <input type="text" name="address" id="address" value="" readonly>
               <br>
             </form>
-            <form>
-              <input type="radio" name="size" id="small" checked> Small (Shs. 800)
-              <br>
-              <input type="radio" name="size" id="medium"> Medium (Shs.1000)
-              <br>
-              <input type="radio" name="size" id="large"> Large (Shs. 1200)
-              <br>
+            <h5>Sizes</h5>
+            <form id="form">
+              <div>
+                <input type="radio" name="size" id="small" checked> Small (Shs. 800)
+                <br>
+                <input type="radio" name="size" id="medium"> Medium (Shs.1000)
+                <br>
+                <input type="radio" name="size" id="large"> Large (Shs. 1200)
+                <br>
+              </div>
             </form>
-            <p> Crust (Shs.200 each)</p>
-            <form>
+            <h5>Crust (@Shs.200)</h5>
+            <form id="form">
               <input type="checkbox" id="crispy" checked> Crispy<br>
               <input type="checkbox" id="sweet"> Sweet<br>
               <input type="checkbox" id="stuffed"> Stuffed<br>
             </form>
-            <p> Toppings (Shs.50 each)</p>
-            <form>
+            <h5>Toppings (@Shs.50)</h5>
+            <form id="form">
               <input type="checkbox" id="topping1"> Pepperoni<br>
               <input type="checkbox" id="topping2"> Cheese<br>
               <input type="checkbox" id="topping3"> Onions<br>
