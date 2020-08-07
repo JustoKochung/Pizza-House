@@ -42,7 +42,6 @@
         </div>
       </nav>
     </div>
-
     <div class="container text-center">
       <div class="row">
         <div class="col-md-7 col-sm-12">
@@ -78,47 +77,51 @@
           </div>
         </div>
       </section>
-      <div class="container">
-        <div class="card">
-          <h1 id="menu">Menu List</h1>
-          <form>
-            <input type="radio" name="delivery" id="picking">Take Away
+      <div class="container-fluid menu-l">
+        <div class="jumbotron">
+          <div class="card">
+            <h1 id="menu">Menu List</h1>
+            <form>
+              <input type="radio" name="delivery" id="picking">Take Away
+              <br>
+              <input type="radio" name="delivery" id="delivery" onclick="insert(this.form)">Delivery (Extra charge of
+              10%
+              on Total)
+              <br>
+              <input type="text" name="address" id="address" value="" readonly>
+              <br>
+            </form>
+            <form>
+              <input type="radio" name="size" id="small" checked> Small (Shs. 800)
+              <br>
+              <input type="radio" name="size" id="medium"> Medium (Shs.1000)
+              <br>
+              <input type="radio" name="size" id="large"> Large (Shs. 1200)
+              <br>
+            </form>
+            <p> Crust (Shs.200 each)</p>
+            <form>
+              <input type="checkbox" id="crispy" checked> Crispy<br>
+              <input type="checkbox" id="sweet"> Sweet<br>
+              <input type="checkbox" id="stuffed"> Stuffed<br>
+            </form>
+            <p> Toppings (Shs.50 each)</p>
+            <form>
+              <input type="checkbox" id="topping1"> Pepperoni<br>
+              <input type="checkbox" id="topping2"> Cheese<br>
+              <input type="checkbox" id="topping3"> Onions<br>
+              <input type="checkbox" id="topping4"> Mushrooms<br>
+              <input type="checkbox" id="topping5"> Peppers<br>
+            </form>
+            <form>
+              <input type="button" value="Calculate Total" onclick="total(this.form)">
+              <input type="button" onclick="blank(this.form)" id="reload" value="Reset Order">
+            </form>
             <br>
-            <input type="radio" name="delivery" id="delivery" onclick="insert(this.form)">Delivery (Extra charge of 10%
-            on Total)
-            <br>
-            <input type="text" name="address" id="address" value="" readonly>
-            <br>
-          </form>
-          <form>
-            <input type="radio" name="size" id="small" checked> Small (Shs. 800)
-            <br>
-            <input type="radio" name="size" id="medium"> Medium (Shs.1000)
-            <br>
-            <input type="radio" name="size" id="large"> Large (Shs. 1200)
-            <br>
-          </form>
-          <p> Crust (Shs.200 each)</p>
-          <form>
-            <input type="checkbox" id="crispy" checked> Crispy<br>
-            <input type="checkbox" id="sweet"> Sweet<br>
-            <input type="checkbox" id="stuffed"> Stuffed<br>
-          </form>
-          <p> Toppings (Shs.50 each)</p>
-          <form>
-            <input type="checkbox" id="topping1"> Pepperoni<br>
-            <input type="checkbox" id="topping2"> Cheese<br>
-            <input type="checkbox" id="topping3"> Onions<br>
-            <input type="checkbox" id="topping4"> Mushrooms<br>
-            <input type="checkbox" id="topping5"> Peppers<br>
-          </form>
-          <form>
-            <input type="button" value="Calculate Total" onclick="total(this.form)">
-            <input type="button" onclick="blank(this.form)" id="reload" value="Reset Order">
-          </form>
+          </div>
         </div>
       </div>
-      <section-3>
+      <section>
         <div class="container text-center">
           <h1 class="text-dark" id="feedbacks">What Our Client's Say</h1>
           <p class="text-secondary">"Amazing Feedbacks</p>
@@ -156,7 +159,6 @@
                   </div>
                 </div>
                 <div class="carousel-item active text-center">
-
                   <div class="card mr-2 d-inline-block shadow-lg">
                     <div class="card-img-top">
                       <img src="images/response2.jpg" class="img-fluid img-thumbnail" alt="member">
@@ -171,7 +173,6 @@
                   </div>
                 </div>
                 <div class="carousel-item text-center">
-
                   <div class="card mr-2 d-inline-block shadow-lg">
                     <div class="card-img-top">
                       <img src="images/response3.jpg" class="img-fluid img-thumbnail" alt="member">
@@ -212,8 +213,8 @@
             </div>
           </div>
         </div>
-      </section-3>
-    </section>
+        </section-3>
+      </section>
   </main>
   <footer>
     <div class="container-fluid p-0">
