@@ -21,7 +21,7 @@ $ git clone https://github.com/JustoKochung/Pizza-House
 | Click submit order | Reset Order Page| Shows amount payable |
 
 ## Live Link (github pages)
-https://n-pretorious.github.io/week-four-prep-ip/
+https://justokochung.github.io/Pizza-House/
 
 ## Support and contact details
 Email: kochungjusto26@gmail.com
