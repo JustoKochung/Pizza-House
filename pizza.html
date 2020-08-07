@@ -82,14 +82,13 @@
         <div class="card">
           <h1 id="menu">Menu List</h1>
           <form>
-            <input type="radio" name="delivery" id="picking" checked>Take Away
+            <input type="radio" name="delivery" id="picking">Take Away
             <br>
             <input type="radio" name="delivery" id="delivery" onclick="insert(this.form)">Delivery (Extra charge of 10%
             on Total)
             <br>
             <input type="text" name="address" id="address" value="" readonly>
             <br>
-
           </form>
           <form>
             <input type="radio" name="size" id="small" checked> Small (Shs. 800)
@@ -98,6 +97,12 @@
             <br>
             <input type="radio" name="size" id="large"> Large (Shs. 1200)
             <br>
+          </form>
+          <p> Crust (Shs.200 each)</p>
+          <form>
+            <input type="checkbox" id="crispy" checked> Crispy<br>
+            <input type="checkbox" id="sweet"> Sweet<br>
+            <input type="checkbox" id="stuffed"> Stuffed<br>
           </form>
           <p> Toppings (Shs.50 each)</p>
           <form>
